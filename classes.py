@@ -7,13 +7,13 @@
 
 class Pizza:
     def __init__(self, size, crust):
-        self.size = "large"
-        self.crust = "thick"
+        self.size = size
+        self.crust = crust
         self.toppings = list()
     
-    def add_topping(self):
+    def add_topping(self, topping):
         self.toppings.append(topping)
 
-    def order_this_pizza(self):
-        toppings = "and" .join(toppings)
-        print(f'I want to order a {self.size}{self.crust} pizza with {self.sauce} sauce, and {self.toppings}. Now, make it snappy!')
+    def order_this_pizza(self, size, crust, toppings):
+        joinedToppings = " and ".join(self.toppings)
+        print(f'I want to order a {self.size}, {self.crust} crust pizza with {joinedToppings}. Now, make it snappy!')
