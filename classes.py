@@ -17,21 +17,22 @@
 # "I would like a 16-inch, deep-dish pizza with Pepperoni and Olives."
 
 class Pizza:
-    def __init__(self):
+    def __init__(self, size):
         self.size = ""
         self.crust = ""
         self.sauce = ""
-        self.cheese = "mozzarella"
-        self.meats = ""
-        self.veggies = ""
+        self.toppings = ""
     
-    def add_topping(self, sauce, cheese, meats, veggies):
+    def add_topping(self):
         self.sauce = sauce
         self.cheese = cheese
         self.meats = meats
         self.veggies = veggies
 
     def order_this_pizza(self):
-        print(f'I want to order a {self.crust}{self.size} pizza with {self.sauce} sauce, {self.cheese}, {self.meats}, and {self.veggies}. Now, make it snappy!')
+        print(f'I want to order a {self.crust}{self.size} pizza with {self.sauce} sauce, and {self.toppings}. Now, make it snappy!')
 
-Pizza
+pizza1 = Pizza()
+pizza1.add_topping
+
+pizza1.order_this_pizza()
